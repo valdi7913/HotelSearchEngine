@@ -8,7 +8,7 @@ public  interface DatabaseInterface {
     public void addReviews(Review review);
 
     public Review[] getHotelReviews(int hotelId);
-    
+
     public Room[] getHotelRooms(Restrictions restrictions);
 
     public Hotel[] getHotels(Restrictions restrictions);
@@ -23,9 +23,9 @@ public  interface DatabaseInterface {
     // Skilar Booking fylki
     public Booking[] getBookings(int roomId);
 
-    public void book(int roomId, int personId, Date startDate, Date endDate);
+    public Booking book(int roomId, int personId, Date startDate, Date endDate);
 
-    public void unbook(int bookingId);
+    public Booking unbook(int bookingId);
 
     public Person login(String name, String password);
 
