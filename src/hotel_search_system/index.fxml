@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="20.0" prefHeight="500.0"
+          prefWidth="700.0" vgap="10" xmlns="http://javafx.com/javafx/15.0.1"
+          xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER" spacing="20.0" GridPane.columnIndex="3" GridPane.columnSpan="4"
+            GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3">
+         <children>
+            <Button fx:id="osatt" mnemonicParsing="false"
+                    prefHeight="50.0" prefWidth="190.0" text="Ósatt" />
+            <Button fx:id="satt" mnemonicParsing="false"
+                    prefHeight="50.0" prefWidth="190.0" text="Satt" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="70.0" prefWidth="69.0" GridPane.columnIndex="3"
+            GridPane.columnSpan="4" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4">
+         <children>
+            <Button fx:id="naesta" alignment="CENTER" mnemonicParsing="false"
+                    prefHeight="50.0" prefWidth="400.0" text="Næsta" />
+         </children>
+      </HBox>
+      <Label fx:id="spurningin" alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0"
+             prefWidth="615.0" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2"
+             GridPane.columnSpan="6" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS">
+         <font>
+            <Font size="25.0" />
+         </font></Label>
+      <Label fx:id="stigin" alignment="CENTER" prefHeight="70.0" prefWidth="512.0"
+             textAlignment="CENTER" GridPane.columnIndex="2" GridPane.columnSpan="6"
+             GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label fx:id="rett_rangt" alignment="CENTER" contentDisplay="CENTER" prefHeight="145.0"
+             prefWidth="505.0" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.columnSpan="6"
+             GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="70.0" />
+      <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="70.0" />
+      <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="70.0" />
+      <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="70.0" />
+      <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="70.0" />
+      <RowConstraints maxHeight="27.0" minHeight="0.0" prefHeight="0.0" />
+   </rowConstraints>
+</GridPane>
