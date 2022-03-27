@@ -2,6 +2,7 @@ package hotel_search_system.storage;//package HotelSearchEngine.Storage;
 import hotel_search_system.models.*;
 import hotel_search_system.storage.DatabaseInterface;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class databaseHelperMock implements DatabaseInterface {
@@ -45,7 +46,14 @@ public class databaseHelperMock implements DatabaseInterface {
     @Override
     public Booking[] getBookings(int roomId) {
         if(roomId==100){
-            Booking book1 = new Booking(1, 100, 200, new Date(2020, 8, 12), new Date(2020, 8, 12));
+            SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
+            String date = "30-01-2001";
+            try {
+                Date date1 = sdf.parse(date);
+            }
+            catch (java.text.ParseException e){
+
+            }
 
             return null; //Breyta í einhver gögn
         }

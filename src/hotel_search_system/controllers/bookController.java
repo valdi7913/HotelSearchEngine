@@ -6,7 +6,7 @@ import hotel_search_system.storage.DatabaseInterface;
 import java.util.*;
 
 public class bookController {
-    
+
     private DatabaseInterface db;
     private loginController login;
 
@@ -22,8 +22,8 @@ public class bookController {
             db.book(roomID,personID, start, end);
         }
         return available;
-        
-    }    
+
+    }
     public void unbook(int bookingId){
         db.unbook(bookingId);
     }

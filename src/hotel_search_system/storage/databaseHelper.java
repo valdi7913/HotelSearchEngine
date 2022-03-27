@@ -37,9 +37,9 @@ public class databaseHelper implements DatabaseInterface{
 
     }
     @Override
-    public void unbook(int bookingId) {
+    public Booking unbook(int bookingId) {
         // TODO Auto-generated method stub
-        
+        return null;
     }
     @Override
     public Person login(String name, String password) {
@@ -49,7 +49,7 @@ public class databaseHelper implements DatabaseInterface{
     @Override
     public void addReviews(Review review) {
         // TODO Auto-generated method stub
-        
+
     }
     @Override
     public Review[] getHotelReviews(int hotelId) {
@@ -74,7 +74,7 @@ public class databaseHelper implements DatabaseInterface{
     @Override
     public void addHotel(Hotel hotel) {
         // TODO Auto-generated method stub
-        
+
     }
     @Override
     public Booking[] getBookings(int roomId) {
@@ -82,14 +82,14 @@ public class databaseHelper implements DatabaseInterface{
         return null;
     }
     @Override
-    public void book(int roomId, int personId, Date startDate, Date endDate) {
+    public Booking book(int roomId, int personId, Date startDate, Date endDate) {
         // TODO Auto-generated method stub
-        
+        return null;
     }
     @Override
     public int logout(String name) {
         // TODO Auto-generated method stub
         return 0;
     }
-    
+
 }
