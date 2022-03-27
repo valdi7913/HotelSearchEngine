@@ -46,19 +46,23 @@ public class databaseHelperMock implements DatabaseInterface {
     @Override
     public Booking[] getBookings(int roomId) {
         if(roomId==100){
-            SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
-            String date = "30-01-2001";
-            try {
-                Date date1 = sdf.parse(date);
-            }
-            catch (java.text.ParseException e){
+            Booking[] bookings = {
+                    new Booking(1,100,201,new Date(1000000), new Date(2000000)),
+                    new Booking(2,100,202,new Date(3000000), new Date(4000000)),
+                    new Booking(2,100,202,new Date(8000000), new Date(9000000)),
+                    new Booking(2,100,202,new Date(10000000), new Date(11000000))
+            };
 
-            }
-
-            return null; //Breyta í einhver gögn
+            return bookings; //Breyta í einhver gögn
         }
         if(roomId==101){
-            return null; //Breyta í einhver gögn
+            Booking[] bookings = {
+                    new Booking(1,100,201,new Date(1000000), new Date(2000000)),
+                    new Booking(2,100,202,new Date(3000000), new Date(4000000)),
+                    new Booking(2,100,202,new Date(5500000), new Date(7000000)),
+                    new Booking(2,100,202,new Date(10000000), new Date(11000000))
+            };
+            return bookings; //Breyta í einhver gögn
         }
         return null;
     }
