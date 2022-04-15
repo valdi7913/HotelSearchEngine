@@ -13,7 +13,6 @@
 
 
 
-
 ------------ Bæta inn í Hotels töfluna -------------------------
 
 -- (hotelId, hotelName, hotelDescription, location, hotelStars integer, averageReview, hotelContactInfo, hotelOwner, hasGym, hasCasino)
