@@ -1,3 +1,12 @@
+-----------------------------------------------------------------
+--
+-- Þessi skrá sýnir yfirlit yfir gagnagrunninn.
+--
+--
+--
+--
+-----------------------------------------------------------------
+
 CREATE TABLE Hotels (
     hotelId int NOT NULL,
     hotelName varchar(100),

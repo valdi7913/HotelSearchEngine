@@ -1,3 +1,19 @@
+-----------------------------------------------------------------
+--
+-- Þessi skrá inniheldur allar skipanir sem fara inn í gagna-
+-- grunninn.
+--
+--
+--
+--
+-----------------------------------------------------------------
+
+
+
+
+
+
+
 ------------ Bæta inn í Hotels töfluna -------------------------
 
 -- (hotelId, hotelName, hotelDescription, location, hotelStars integer, averageReview, hotelContactInfo, hotelOwner, hasGym, hasCasino)
